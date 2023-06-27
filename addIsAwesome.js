@@ -5,7 +5,7 @@ const addIsAwesome = function (baseString, cb) {
   // }
   
 
-   cb(baseString);
+   cb(baseString + ' is Awesome');
 };
 
 export { addIsAwesome };

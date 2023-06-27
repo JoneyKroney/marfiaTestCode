@@ -3,7 +3,11 @@ const { addIsAwesome } = require('./addIsAwesome');
 describe('addIsAwesome', () => {
   // your code here.
   test('p input for add is awasome', () => {
-    expect( addIsAwesome('p', (baseString) => (baseString + ' is Awesome'))).toEqual('p is Awesome');
+    addIsAwesome('p', (input) => {
+      expect(input).toBe('p is Awesome');
+    });
+
+    
   });
 
   // test('undefined input for add is awasome', () => {
